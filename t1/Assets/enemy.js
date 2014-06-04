@@ -16,20 +16,15 @@ var cool= 0;
 function Start () {
 
 Damage = 5.0;
-
-
 }
 
 function Update () {
-
 
 distanceX = navcomponent.destination.x - this.transform.position.x;
 distanceY = navcomponent.destination.y - this.transform.position.y;
 if(player){
 
 navcomponent.SetDestination(player.position);
-
-
 
 if (this.transform.position.x < player.position.x){Anim.SetInteger("move",2);}
 else if (this.transform.position.x > player.position.x){Anim.SetInteger("move",4);}
@@ -39,13 +34,10 @@ if (this.transform.position.z < player.position.z){Anim.SetInteger("move",1);}
 else if (this.transform.position.z < player.position.z){Anim.SetInteger("move",3);}
 
 }
-
 }
 
 function OnTriggerStay(col : Collider){
-
-
-if (col.gameObject.FindGameObjectWithTag("Player")){
+	if (col.gameObject.FindGameObjectWithTag("Player")){
 	
 	if (!hit){
 	Debug.Log("hit");
@@ -54,8 +46,6 @@ if (col.gameObject.FindGameObjectWithTag("Player")){
 	hit = true;
 
 	}
-
-
 if (hit){
 
 cool += 1;

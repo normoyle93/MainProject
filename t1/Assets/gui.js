@@ -29,7 +29,7 @@ bar.guiTexture.pixelInset.width = (Health / maxhealth) * maxbarlength;
 
 }
 
-function ApplyHealthPickup ( addition : float) {
+function ApplyHealth ( addition : float) {
 
 
 Health += addition;

@@ -1,13 +1,18 @@
-﻿#pragma strict
+#pragma strict
 var healthvalue : int;
+var icon : Texture;
+var Gui = GameObject.Find("GUi");
 
 function OnTriggerEnter(object: Collider){
+
 
 Debug.Log("health pickup!!!!");
 
 	if (object.gameObject.FindGameObjectWithTag("Player")){
 	Destroy(this.gameObject);
-	GameObject.Find("HealthBar").SendMessage ("ApplyHealthPickup", healthvalue);
+	
+	Gui.SendMessage("AddItem","Health");
 	}
 
 }
+

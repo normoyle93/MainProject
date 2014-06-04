@@ -49,6 +49,8 @@
      <Compile Include="Assets\CharacterControlls.js" />
      <Compile Include="Assets\GameSettings.js" />
      <Compile Include="Assets\HealthPickup.js" />
+     <Compile Include="Assets\Inventory.js" />
+     <Compile Include="Assets\ItemScript.js" />
      <Compile Include="Assets\PLayerHealth.js" />
      <Compile Include="Assets\enemy.js" />
      <Compile Include="Assets\gui.js" />
